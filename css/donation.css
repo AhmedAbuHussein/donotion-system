@@ -1,0 +1,10 @@
+ol{
+    direction:rtl;
+    text-align:right;
+    padding:20px 40px;
+    background:rgba(255,255,255,0.8);
+    border-radius:20px;
+}
+ol li{
+    padding-bottom: 15px;
+}

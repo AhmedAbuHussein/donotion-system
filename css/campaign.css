@@ -1,0 +1,11 @@
+.container p {
+    text-align: right;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    direction:rtl;
+}
+
+.ad-box img {
+    width: 100%;
+    height: 200px;
+}

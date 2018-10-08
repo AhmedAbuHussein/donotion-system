@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Organ Donation System</title>
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/globals.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+
+<body>
+    <header>
+
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <img style="width:160px; height:120px" src="images/logo.png">
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img style="width:200px; height:120px" src="images/logo2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse h-100" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mr-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fatwas.html">Fatwas Sharia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donationprocedures.html">Donation procedures</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="campaign.html">Awareness Campaign</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Language
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">عربي</a>
+                                <a class="dropdown-item" href="#">English</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <div class="cont-child">
+                <div style="min-height:50px">
+                    <h3 id="typed" class="text-capitalize"></h3>
+                </div>
+                <div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenterLogin"><i class="fa fa-send"></i> Login</button>
+                    <button type="button" class="btn btn-outline-danger btn-lg" data-toggle="modal" data-target="#exampleModalCenterRegister"><i class="fa fa-lock"></i> Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var typed3 = new Typed('#typed', {
+            strings: ['Be a <strong class="text-warning">Donor</strong>', 'Our goal is <strong class="text-success">facilitate the donation</strong> products', 'or register as a <strong style="color:#f27;">Visitor</strong>'],
+            typeSpeed: 30,
+            backSpeed: 30,
+            smartBackspace: false, // this is a default
+            loop: true,
+            cursorChar: "",
+        });
+    </script>
+
+    <footer>
+        <p class="text-muted text-center">CopyRight &copy; 2018 all right reserved for Organ Donation System</p>
+    </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenterLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white" id="exampleModalLongTitle"><i class="fa fa-key fa-lg"></i> Login</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="" enctype="multipart/form-data">
+
+                        <div class="form-group">
+                            <input type="text" name="username" placeholder="User Name" class="form-control" required />
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" name="password" placeholder="Password" class="form-control" required />
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block"><i class="fa fa-send"></i> Send</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg" id="exampleModalCenterRegister" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white" id="exampleModalLongTitle"><i class="fa fa-edit"></i> Registration</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+
+
+                    <form action="" method="POST" enctype="multipart/form-data">
+
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show text-white active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <h3 class="text-center"><i class="fa fa-user"></i> Personal Information</h3>
+
+                                <div class="form-group row">
+                                    <div class="col-md-6">
+                                        <label for="name">Full Name</label>
+                                        <input id="name" autocomplete="off" type="text" placeholder="Full Name" class="form-control" required name="fullname" />
+                                        <span class="text-danger">*</span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email">Email Address</label>
+                                        <input id="email" autocomplete="off" type="email" placeholder="Your Email" class="form-control" required name="email" />
+                                        <span class="text-danger">*</span>
+                                    </div>
+
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-6">
+                                        <label for="password">Password</label>
+                                        <input id="password" autocomplete="new-password" type="password" placeholder="Password" class="form-control" required name="password" />
+                                        <span class="text-danger">*</span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone">Phone</label>
+                                        <input id="phone" autocomplete="off" type="text" placeholder="Cell Phone" class="form-control" required name="phone" />
+                                        <span class="text-danger">*</span>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-6">
+                                        <label for="birth_data">Date Of Birth</label>
+                                        <input id="birth_data" autocomplete="off" type="date" class="form-control" required name="birth_data" />
+                                        <span class="text-danger">*</span>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="gender">Gender</label>
+                                        <select id="gender" class="form-control" name="gender">
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                        <span class="text-danger">*</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade text-white" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <h3 class="text-center"><i class="fa fa-info-circle"></i> Registeration Type</h3>
+
+
+                                <div class="form-group">
+                                    <label for="type">Type</label>
+                                    <select data-value="#type-hide" id="type" class="form-control" name="type">
+                                    <option value="Visitor">Visitor</option>
+                                    <option value="Donor">Donor</option>
+                                </select>
+                                    <span class="text-danger">*</span>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="chronic">Chronic Diseases</label>
+                                    <textarea name="chronic" id="chronic" class="form-control" placeholder="Chronic Diseases ..." rows="2"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="blood">Blood Group</label>
+                                    <select id="blood" name="blood" class="form-control">
+                                        <option value="A+">A+</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B-">B-</option>
+                                        <option value="O+">O+</option>
+                                        <option value="O-">O-</option>
+                                        <option value="AB+">AB+</option>
+                                        <option value="AB-">AB-</option>
+                                    </select>
+                                    <span class="text-danger">*</span>
+                                </div>
+
+
+                            </div>
+                            <div class="tab-pane fade text-white" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                <h3 class="text-center"><i class="fa fa-indent"></i> Extra information</h3>
+                                <div class="form-group">
+                                    <label for="address">Address</label>
+                                    <textarea name="address" id="address" class="form-control" placeholder="Your Address ..." rows="4"></textarea>
+                                    <span class="text-danger">*</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <button class="btn btn-danger btn-block"><i class="fa fa-lock"></i> Register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="btn btn-outline-success active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Step 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-success mx-1" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Step 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-success" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Step 3</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

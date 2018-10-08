@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ODS</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/globals.css" />
+    <link href="css/profile.css" rel="stylesheet">
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/profile.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <img style="width:160px; height:120px" src="images/logo.png">
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img style="width:200px; height:120px" src="images/logo2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                <div class="collapse navbar-collapse h-100" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mr-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fatwas.html">Fatwas Sharia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donationprocedures.html">Donation procedures</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="campaign.html">Awareness Campaign</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="profile.html">Profile</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Language
+                    </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">عربي</a>
+                                <a class="dropdown-item" href="#">English</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <div class="content mb-4">
+
+        <div class="container">
+            <div class="row user-menu-container square">
+                <div class="col-md-7 user-details">
+                    <div class="row coralbg white">
+                        <div class="col-md-6 no-pad">
+                            <div class="user-pad">
+                                <h3>Welcome Back, Najd</h3>
+                                <h4 class="white"><i class="fa fa-address-card"></i> Saudi Arabia</h4>
+                                <h4 class="white"><i class="fa fa-envelope-o"></i> najd@gmail.com</h4>
+                                <h4 class="white"><i class="fa fa-user"></i> Donor</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-6 no-pad">
+                            <div class="user-image">
+                                <img src="images/unknown.png" class="img-responsive thumbnail" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row overview">
+                        <div class="col-md-4 user-pad text-center">
+                            <h3>Requests</h3>
+                            <h4>5</h4>
+                        </div>
+                        <div class="col-md-4 user-pad text-center">
+                            <h3>Notification</h3>
+                            <h4>10</h4>
+                        </div>
+                        <div class="col-md-4 user-pad text-center">
+                            <h3>Hospitals</h3>
+                            <h4>150</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 user-menu-btns">
+                    <div class="btn-group-vertical square" id="responsive">
+                        <a href="#" class="btn btn-block btn-default active">
+                            <i class="fa fa-bell-o fa-3x" data-toggle="tooltip" title="Notification"></i>
+                        </a>
+                        <a href="#" class="btn btn-default">
+                            <i class="fa fa-envelope-o fa-3x" data-toggle="tooltip" title="Requests"></i>
+                        </a>
+                        <a href="#" class="btn btn-default">
+                            <i class="fa fa-truck fa-3x" data-toggle="tooltip" title="Make Reques"></i>
+                        </a>
+
+                        <a href="#" class="btn btn-default">
+                            <i class="fa fa-cloud-upload fa-3x" data-toggle="tooltip" title="Update Profile"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 user-menu user-pad">
+                    <div class="user-menu-content active">
+                        <h3>
+                            Latest Notifications
+                        </h3>
+                        <ul class="user-menu-list">
+
+                            <li>
+                                <h5><i class="fa fa-paper-plane-o coral"></i> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero sed laborum, placeat cupiditate unde labore, consequatur nisi accusamus sit assumenda esse provident facere et sunt
+                                    natus alias totam sint iure.</h5>
+                            </li>
+                            <li>
+                                <h5><i class="fa fa-paper-plane-o coral"></i> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero sed laborum, placeat cupiditate unde labore, consequatur nisi accusamus sit assumenda esse provident facere et sunt
+                                    natus alias totam sint iure.</h5>
+                            </li>
+                            <li>
+                                <h5><i class="fa fa-paper-plane-o coral"></i> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero sed laborum, placeat cupiditate unde labore, consequatur nisi accusamus sit assumenda esse provident facere et sunt
+                                    natus alias totam sint iure.</h5>
+                            </li>
+                            <li>
+                                <h5><i class="fa fa-paper-plane-o coral"></i> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero sed laborum, placeat cupiditate unde labore, consequatur nisi accusamus sit assumenda esse provident facere et sunt
+                                    natus alias totam sint iure.</h5>
+                            </li>
+                            <li>
+                                <h5><i class="fa fa-paper-plane-o coral"></i> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero sed laborum, placeat cupiditate unde labore, consequatur nisi accusamus sit assumenda esse provident facere et sunt
+                                    natus alias totam sint iure.</h5>
+                            </li>
+
+                            <li>
+                                <a class="btn btn-labeled btn-success" href="notifications.html">
+                                    <span class="btn-label"><i class="fa fa-bell-o"></i></span>View Notifications</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="user-menu-content">
+                        <h3>
+                            Latest Requests
+                        </h3>
+                        <ul class="user-menu-list">
+                            <li>
+                                <span>Kidney</span><span class="refused"> Refused</span>
+                            </li>
+                            <li>
+                                <span>Blood</span><span class="accepted"> Accepted</span>
+                            </li>
+                            <li>
+                                <span>Kidney</span><span class="refused"> Refused</span>
+                            </li>
+                            <li>
+                                <span>Blood</span><span class="accepted"> Accepted</span>
+                            </li>
+
+                            <li>
+                                <a type="button" class="btn btn-labeled btn-danger" href="requestes.html">
+                                    <span class="btn-label"><i class="fa fa-envelope-o"></i></span>View Requests</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="user-menu-content">
+                        <h3>Donor..</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid odit tempore dolorum illum cum facilis magnam sint fugit cumque mollitia debitis velit nulla sequi, laboriosam eveniet ex quia neque enim?</p>
+                        <div class="text-center">
+                            <a class="btn btn-labeled btn-danger" href="makerequest.html">
+                                <span class="btn-label"><i class="fa fa-edit"></i></span>Create Request</a>
+                        </div>
+                    </div>
+                    <div class="user-menu-content">
+                        <h2 class="text-center">
+                            Update Profile Info
+                        </h2>
+                        <div class="text-center">
+                            <a type="button" href="#" class="btn btn-outline-danger btn-lg" data-toggle="modal" data-target="#exampleModalCenterRegister">
+                                <span class="btn-label"><i class="fa fa-pencil"></i></span>Update Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p class="text-muted text-center">CopyRight &copy; 2018 all right reserved for Organ Donation System</p>
+    </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg" id="exampleModalCenterRegister" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white" id="exampleModalLongTitle"><i class="fa fa-edit"></i> Registration</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+
+
+                    <form action="">
+
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show text-white active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <h3 class="text-center"><i class="fa fa-user"></i> Personal Information</h3>
+
+                                <div class="form-group row">
+                                    <div class="col-md-6">
+                                        <label for="name">Full Name</label>
+                                        <input id="name" autocomplete="off" type="text" placeholder="Full Name" class="form-control" required name="fullname" />
+                                        <span class="text-danger">*</span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email">Email Address</label>
+                                        <input id="email" autocomplete="off" type="email" placeholder="Your Email" class="form-control" required name="email" />
+                                        <span class="text-danger">*</span>
+                                    </div>
+
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-6">
+                                        <label for="password">Password</label>
+                                        <input id="password" autocomplete="new-password" type="password" placeholder="Password" class="form-control" required name="password" />
+                                        <span class="text-danger">*</span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone">Phone</label>
+                                        <input id="phone" autocomplete="off" type="text" placeholder="Cell Phone" class="form-control" required name="phone" />
+                                        <span class="text-danger">*</span>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-6">
+                                        <label for="birth_data">Date Of Birth</label>
+                                        <input id="birth_data" autocomplete="off" type="date" class="form-control" required name="birth_data" />
+                                        <span class="text-danger">*</span>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="gender">Gender</label>
+                                        <select id="gender" class="form-control" name="gender">
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                        <span class="text-danger">*</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade text-white" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <h3 class="text-center"><i class="fa fa-info-circle"></i> Registeration Type</h3>
+
+
+                                <div class="form-group">
+                                    <label for="type">Type</label>
+                                    <select data-value="#type-hide" id="type" class="form-control" name="type">
+                                    <option value="Visitor">Visitor</option>
+                                    <option value="Donor">Donor</option>
+                                </select>
+                                    <span class="text-danger">*</span>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="chronic">Chronic Diseases</label>
+                                    <textarea name="chronic" id="chronic" class="form-control" placeholder="Chronic Diseases ..." rows="2"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="blood">Blood Group</label>
+                                    <select id="blood" name="blood" class="form-control">
+                                        <option value="A+">A+</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B-">B-</option>
+                                        <option value="O+">O+</option>
+                                        <option value="O-">O-</option>
+                                        <option value="AB+">AB+</option>
+                                        <option value="AB-">AB-</option>
+                                    </select>
+                                    <span class="text-danger">*</span>
+                                </div>
+
+
+                            </div>
+                            <div class="tab-pane fade text-white" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                <h3 class="text-center"><i class="fa fa-indent"></i> Extra information</h3>
+                                <div class="form-group">
+                                    <label for="address">Address</label>
+                                    <textarea name="address" id="address" class="form-control" placeholder="Your Address ..." rows="4"></textarea>
+                                    <span class="text-danger">*</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <button class="btn btn-danger btn-block"><i class="fa fa-lock"></i> Register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="btn btn-outline-success active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Step 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-success mx-1" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Step 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-success" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Step 3</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
